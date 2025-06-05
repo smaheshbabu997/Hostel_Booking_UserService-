@@ -18,6 +18,7 @@ public class UserController {
     private UserService userService;
     @Autowired private JwtUtil jwtUtil;
 
+    //user signup url
     @PostMapping("/signup")
     public ResponseEntity<String> signup(@RequestBody SignupRequest request) {
         userService.signup(request);
